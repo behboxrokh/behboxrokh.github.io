@@ -1,0 +1,97 @@
+<div id="navbar">
+    <div id="bars-icon">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="https://behboxrokh.github.io">Home</a>
+        <a href="../pages/products.html">Products</a>
+        <a href="../pages/clients.html">Clients</a>
+        <a href="../pages/contact.html">Contact</a>
+    </div>
+</div>
+
+<style media="screen">
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color:  #f1f1f1;
+        font-weight: bold;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+
+    @media screen and (min-width: 1024px) {
+        #bars-icon {
+            display: none;
+        }
+
+        #mySidenav {
+            all: unset;
+            display: grid;
+            grid-template-columns: repeat(5, minmax(100px, max-content));
+            margin: 50px;
+            border-radius: 10px;
+            border: 1px solid silver;
+            box-shadow: 0 0 8px gray;
+            background-color: rgb(230, 230, 230);
+        }
+
+        .sidenav a {
+            text-align: center;
+            padding: 8px 20px 8px 20px;
+        }
+
+        .sidenav a:hover {
+            color: tomato;
+            text-shadow: 0 0 8px violet;
+            background-color: rgb(248, 221, 216);
+        }
+
+        .sidenav .closebtn {
+            display: none;
+        }
+    }
+
+</style>
+
+<script>
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
