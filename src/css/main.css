@@ -5,3 +5,26 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.pages {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.pages img {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  padding: 50 px;
+}
+
+@media screen and (min-width: 1024px) {
+  .pages {
+    grid-template-columns: 1fr 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
