@@ -7,6 +7,10 @@ body {
   line-height: 1.6;
 }
 
+.pages {
+  max-width: 1024px;
+}
+
 #mainContainer {
   display: grid;
   grid-template-columns: 1fr;
