@@ -9,14 +9,41 @@
     <div class="face6">Rokh</div>
   </div>
 </div>
-<div id="stuffer" style="padding-top: var(--cubeSize);"></div>
 <style>
   /******************************
   * Cube
   *******************************/
+
+  /* settings for mobile devices max-width: 300px */
+  :root {
+    /* cube size mobile devices */
+    --cubeSize: 90px;
+    --cubeSizeHalf: calc(var(--cubeSize) / 2);
+    --cubeFontSize: 25px;
+  }
+
+  @media screen and (min-width: 300px) {
+    :root {
+      /* cube size tablet devices */
+      --cubeSize: 40vw;
+      --cubeSizeHalf: calc(var(--cubeSize) / 2);
+      --cubeFontSize: 10vw;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    :root {
+      /* cube size tablet devices */
+      --cubeSize: 240px;
+      --cubeSizeHalf: calc(var(--cubeSize) / 2);
+      --cubeFontSize: 60px;
+    }
+  }
+
   #BoxContainer3D {
     margin: auto;
-    padding-top: 50px;
+    padding-top: var(--cubeSizeHalf);
+    padding-bottom: calc(var(--cubeSizeHalf) * 3);
     min-width: var(--cubeSize);
   }
 
