@@ -13,7 +13,7 @@
 	<script src="../src/js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-	<div id="include-navbar"></div>
+  <div id="include-navbar"></div>
   <div id="include-cube" style="margin: auto;"></div>
 
   <div id="contact-page" class="pages">
@@ -22,14 +22,13 @@
       <h2>Email:</h2>
       <p>BehBoxRokh@Gmail.com</p>
     </div>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <div id="map"></div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0uLBMl15M95Cj8OLpHwbpjYc21-IITuE&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
   </div>
-  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-  <div id="map"></div>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0uLBMl15M95Cj8OLpHwbpjYc21-IITuE&callback=initMap&libraries=&v=weekly"
-    async
-  ></script>
-
   <div id="include-footer"></div>
   
   <style>
