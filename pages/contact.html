@@ -14,6 +14,8 @@
 </head>
 <body>
 	<div id="include-navbar"></div>
+  <div id="include-cube" style="margin: auto;"></div>
+
   <div id="contact-page" class="pages">
     <div>
       <h1>Amin Taheri Ghahfarokhi</h1>
@@ -21,10 +23,40 @@
       <p>BehBoxRokh@Gmail.com</p>
     </div>
   </div>
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <div id="map"></div>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0uLBMl15M95Cj8OLpHwbpjYc21-IITuE&callback=initMap&libraries=&v=weekly"
+    async
+  ></script>
+
   <div id="include-footer"></div>
+  
+  <style>
+    /* Cube */
+    :root {
+      --cubeSize: 90px;
+      --cubeSizeHalf: 45px;
+      --cubeFontSize: 25px;
+    }
     
+    #map {
+      margin: auto;
+      height: 400px;
+      width: 90%;
+      max-width: 600px;
+    }
+  </style>
+
   <script>
     $( "#include-navbar" ).load("../common/navbar.html");
+    $( "#include-cube" ).load("../common/cube.html");
     $( "#include-footer" ).load("../common/footer.html");
+    // Initialize and add the map
+    function initMap() {
+      const qafarokh = { lat: 32.2701, lng: 50.9867 };
+      const map = new google.maps.Map(document.getElementById("map"), {zoom: 4,center: qafarokh,});
+      const marker = new google.maps.Marker({position: qafarokh, map: map,});
+    }
   </script>
 </body>
