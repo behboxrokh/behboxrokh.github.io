@@ -66,29 +66,29 @@
     transform: translateZ(var(--cubeSizeHalf));
   }
   .spinner .face2 { 
-    -webkit-transform: rotateY(90deg) translateZ(var(--cubeSizeHalf)); 
-    -ms-transform: rotateY(90deg) translateZ(var(--cubeSizeHalf)); 
-    transform: rotateY(90deg) translateZ(var(--cubeSizeHalf)); 
+    -webkit-transform: rotateY(-90deg) translateZ(var(--cubeSizeHalf)); 
+    -ms-transform: rotateY(-90deg) translateZ(var(--cubeSizeHalf)); 
+    transform: rotateY(-90deg) translateZ(var(--cubeSizeHalf)); 
   }
   .spinner .face3 { 
-    -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(var(--cubeSizeHalf)); 
-    -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(var(--cubeSizeHalf)); 
-    transform: rotateY(90deg) rotateX(90deg) translateZ(var(--cubeSizeHalf)); 
+    -webkit-transform: rotateY(-90deg) rotateX(-90deg) translateZ(var(--cubeSizeHalf)); 
+    -ms-transform: rotateY(-90deg) rotateX(-90deg) translateZ(var(--cubeSizeHalf)); 
+    transform: rotateY(-90deg) rotateX(-90deg) translateZ(var(--cubeSizeHalf)); 
   }
   .spinner .face4 { 
-    -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(var(--cubeSizeHalf)); 
-    -ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(var(--cubeSizeHalf)); 
-    transform: rotateY(180deg) rotateZ(90deg) translateZ(var(--cubeSizeHalf)); 
+    -webkit-transform: rotateY(180deg) rotateZ(-90deg) translateZ(var(--cubeSizeHalf)); 
+    -ms-transform: rotateY(180deg) rotateZ(-90deg) translateZ(var(--cubeSizeHalf)); 
+    transform: rotateY(180deg) rotateZ(-90deg) translateZ(var(--cubeSizeHalf)); 
   }
   .spinner .face5 { 
-    -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(var(--cubeSizeHalf)); 
-    -ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(var(--cubeSizeHalf)); 
-    transform: rotateY(-90deg) rotateZ(90deg) translateZ(var(--cubeSizeHalf)); 
+    -webkit-transform: rotateY(90deg) rotateZ(90deg) translateZ(var(--cubeSizeHalf)); 
+    -ms-transform: rotateY(90deg) rotateZ(90deg) translateZ(var(--cubeSizeHalf)); 
+    transform: rotateY(90deg) rotateZ(90deg) translateZ(var(--cubeSizeHalf)); 
   }
   .spinner .face6 { 
-    -webkit-transform: rotateX(-90deg) translateZ(var(--cubeSizeHalf)); 
-    -ms-transform: rotateX(-90deg) translateZ(var(--cubeSizeHalf)); 
-    transform: rotateX(-90deg) translateZ(var(--cubeSizeHalf)); 
+    -webkit-transform: rotateX(90deg) translateZ(var(--cubeSizeHalf)); 
+    -ms-transform: rotateX(90deg) translateZ(var(--cubeSizeHalf)); 
+    transform: rotateX(90deg) translateZ(var(--cubeSizeHalf)); 
   }
 
   .spinner {
@@ -103,18 +103,18 @@
   }
 
   @-webkit-keyframes spincube {
-    16%      { -webkit-transform: rotateY(-90deg);                }
-    33%      { -webkit-transform: rotateY(-90deg) rotateZ(90deg); }
-    50%      { -webkit-transform: rotateY(180deg) rotateZ(90deg); }
-    66%      { -webkit-transform: rotateY(90deg) rotateX(90deg);  }
-    83%      { -webkit-transform: rotateX(90deg);                 }
+    16%      { -webkit-transform: rotateY(90deg);                }
+    33%      { -webkit-transform: rotateY(90deg) rotateZ(90deg); }
+    50%      { -webkit-transform: rotateY(180deg) rotateZ(-90deg); }
+    66%      { -webkit-transform: rotateY(-90deg) rotateX(-90deg);  }
+    83%      { -webkit-transform: rotateX(-90deg);                 }
   }
   @keyframes spincube {
-    16%      { -ms-transform: rotateY(-90deg); transform: rotateY(-90deg); }
-    33%      { -ms-transform: rotateY(-90deg) rotateZ(90deg); transform: rotateY(-90deg) rotateZ(90deg); }
-    50%      { -ms-transform: rotateY(180deg) rotateZ(90deg); transform: rotateY(180deg) rotateZ(90deg); }
-    66%      { -ms-transform: rotateY(90deg) rotateX(90deg); transform: rotateY(90deg) rotateX(90deg); }
-    83%      { -ms-transform: rotateX(90deg); transform: rotateX(90deg); }
+    16%      { -ms-transform: rotateY(90deg); transform: rotateY(90deg); }
+    33%      { -ms-transform: rotateY(90deg) rotateZ(90deg); transform: rotateY(90deg) rotateZ(90deg); }
+    50%      { -ms-transform: rotateY(180deg) rotateZ(-90deg); transform: rotateY(180deg) rotateZ(-90deg); }
+    66%      { -ms-transform: rotateY(-90deg) rotateX(-90deg); transform: rotateY(-90deg) rotateX(-90deg); }
+    83%      { -ms-transform: rotateX(-90deg); transform: rotateX(-90deg); }
   }
 
 </style>
