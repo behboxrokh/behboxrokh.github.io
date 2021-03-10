@@ -1,11 +1,17 @@
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'iransans', Tahoma, sans-serif;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
   line-height: 1.6;
 }
+
+@font-face {
+  font-family: 'iransans';
+  src: url('../../assets/font/iran.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   url('../../assets/font/iran.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
 
 .pages {
   margin: auto;
