@@ -35,10 +35,6 @@
       <div id="include-navbar"></div>
       <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
       <div id="map"></div>
-      <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0uLBMl15M95Cj8OLpHwbpjYc21-IITuE&callback=initMap&libraries=&v=weekly"
-        async
-      ></script>
     </div>
   </div>
   <div style="margin: auto;"><img id="behboxrokhIcon" src="../assets/img/icons/BehBoxRokh.png" alt="BehBoxRokh"></div>
@@ -82,11 +78,5 @@
     $( "#include-navbar" ).load("../common/navbar.html");
     $( "#include-cube" ).load("../common/cube.html");
     $( "#include-footer" ).load("../common/footer.html");
-    // Initialize and add the map
-    function initMap() {
-      const qafarokh = { lat: 32.2701, lng: 50.9867 };
-      const map = new google.maps.Map(document.getElementById("map"), {zoom: 4,center: qafarokh,});
-      const marker = new google.maps.Marker({position: qafarokh, map: map,});
-    }
   </script>
 </body>
